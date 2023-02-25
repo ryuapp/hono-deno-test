@@ -6,12 +6,10 @@ import { bearerAuth } from 'https://deno.land/x/hono/middleware.ts'
 const app = new Hono()
 const token = 'honoiscool'
 
-app.use('/test.txt', bearerAuth({ token }), serveStatic({ root:"./static" }))
+app.use('/*', bearerAuth({ token }))
+app.use('/test.txt', serveStatic({ root:"./static" }))
 app.get('/', (c) => c.json({
     message: "Hello Hono!"
-}))
-app.get('/test.txt', (c) => c.json({
-    message: "access ./test.txt!"
 }))
 
 serve(app.fetch)
