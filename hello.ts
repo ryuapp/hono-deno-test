@@ -1,4 +1,4 @@
-import { serve } from 'https://deno.land/std@0.167.0/http/server.ts'
+import { serve } from 'https://deno.land/std/http/server.ts'
 import { Hono } from 'https://deno.land/x/hono/mod.ts'
 import { bearerAuth } from 'https://deno.land/x/hono/middleware.ts'
 
