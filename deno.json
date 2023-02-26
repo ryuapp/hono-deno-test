@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "start": "deno run --allow-net --allow-read --allow-write --watch=hello.ts hello.ts"
+    "start": "deno run --allow-net --allow-read --watch=hello.ts hello.ts",
+    "dev": "deno run --allow-net --allow-read --allow-write --watch=dev.ts dev.ts"
   },
   "importMap": "./import_map.json"
 }
