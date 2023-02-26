@@ -1,6 +1,6 @@
-import { serve } from 'https://deno.land/std/http/server.ts'
-import { Hono } from 'https://deno.land/x/hono/mod.ts'
-import { bearerAuth, serveStatic } from 'https://deno.land/x/hono/middleware.ts'
+import { serve } from "$http/server.ts";
+import { Hono } from '$hono/mod.ts'
+import { bearerAuth, serveStatic } from '$hono/middleware.ts'
 import testList from "./static/test.json" assert { type: "json" };
 
 const app = new Hono()
