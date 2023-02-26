@@ -1,3 +1,3 @@
 ```
-deno run --allow-net hello.ts
+deno run --allow-net --allow-read hello.ts
 ```
