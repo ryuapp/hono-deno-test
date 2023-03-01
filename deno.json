@@ -1,7 +1,12 @@
 {
   "tasks": {
     "start": "deno run --allow-net --allow-read --watch=hello.ts hello.ts",
-    "dev": "deno run --allow-net --allow-read --allow-write --watch=dev.ts dev.ts"
+    "dev": "deno run -A --watch=dev.ts dev.tsx"
   },
-  "importMap": "./import_map.json"
+  "importMap": "./import_map.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxFragmentFactory": "Fragment",
+    "jsxImportSource": "npm:hono@3.0.2/jsx" 
+  }
 }

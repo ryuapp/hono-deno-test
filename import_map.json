@@ -1,7 +1,7 @@
 {
     "imports": {
         "npm/": "https://unpkg.com/",
-        "$http/": "https://deno.land/std/http/",
-        "$hono/": "https://deno.land/x/hono/"
+        "$http/": "https://deno.land/std@0.178.0/http/",
+        "$hono/": "https://deno.land/x/hono@v3.0.2/"
     }
 }
